@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .wrap {
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <script type="module" src="./components/index.js"></script>
+    <div class="wrap">
+      <my-button></my-button>
+      <my-button-shadow></my-button-shadow>
+      <my-button-clickable></my-button-clickable>
+      <my-button-template>
+        <img
+          src="https://icons-for-free.com/iconfiles/png/512/delete+remove+trash+trash+bin+trash+can+icon-1320073117929397588.png"
+          slot="icon"
+        />
+        <span slot="text">Remove</span>
+      </my-button-template>
+    </div>
+  </body>
+</html>
